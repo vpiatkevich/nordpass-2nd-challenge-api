@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="36" failures="14" errors="0" time="14.485">
+  <testsuite name="HMAC Authentication and Enhanced Security Measures for API" errors="0" failures="0" skipped="0" timestamp="2023-08-19T19:32:54" time="2.951" tests="1">
+    <testcase classname="HMAC Authentication and Enhanced Security Measures for API Request to GET /user/items with HMAC headers Status code is 200" name="HMAC Authentication and Enhanced Security Measures for API Request to GET /user/items with HMAC headers Status code is 200" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="GET /user/{id}/item - Returns specific user item by its item id" errors="0" failures="4" skipped="0" timestamp="2023-08-19T19:32:54" time="4.255" tests="10">
+    <testcase classname="GET /user/{id}/item - Returns specific user item by its item id 200 - Item details successfully returned (second item) Status code is 200" name="GET /user/{id}/item - Returns specific user item by its item id 200 - Item details successfully returned (second item) Status code is 200" time="0.006">
+    </testcase>
+    <testcase classname="GET /user/{id}/item - Returns specific user item by its item id 200 - Item details successfully returned (second item) JSON schema is valid" name="GET /user/{id}/item - Returns specific user item by its item id 200 - Item details successfully returned (second item) JSON schema is valid" time="0.006">
+    </testcase>
+    <testcase classname="GET /user/{id}/item - Returns specific user item by its item id 200 - Item details successfully returned (second item) id corresponds to second item&apos;s id" name="GET /user/{id}/item - Returns specific user item by its item id 200 - Item details successfully returned (second item) id corresponds to second item&apos;s id" time="0">
+    </testcase>
+    <testcase classname="GET /user/{id}/item - Returns specific user item by its item id 200 - Item details successfully returned (second item) Title is &quot;Homework API task v1&quot;" name="GET /user/{id}/item - Returns specific user item by its item id 200 - Item details successfully returned (second item) Title is &quot;Homework API task v1&quot;" time="0">
+    </testcase>
+    <testcase classname="GET /user/{id}/item - Returns specific user item by its item id 200 - Item details successfully returned (second item) Tags are equal" name="GET /user/{id}/item - Returns specific user item by its item id 200 - Item details successfully returned (second item) Tags are equal" time="0.001">
+    </testcase>
+    <testcase classname="GET /user/{id}/item - Returns specific user item by its item id 200 - Item details successfully returned (second item) Files path validation" name="GET /user/{id}/item - Returns specific user item by its item id 200 - Item details successfully returned (second item) Files path validation" time="0.001">
+    </testcase>
+    <testcase classname="GET /user/{id}/item - Returns specific user item by its item id 401 - Bearer token is missing or invalid Status code is 401" name="GET /user/{id}/item - Returns specific user item by its item id 401 - Bearer token is missing or invalid Status code is 401" time="0.002">
+      <failure>assert.strictEqual(received, expected)
+
+Expected value to strictly be equal to:
+  401
+Received:
+  200
+
+Message:
+  expected 200 to equal 401
+    at Object.&lt;anonymous&gt; (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/test/GET.user.id.item.test.js:93:40)
+    at Promise.then.completed (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/utils.js:300:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/utils.js:233:10)
+    at _callCircusTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:315:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:251:3)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:125:9)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:120:9)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:120:9)
+    at run (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:70:3)
+    at runAndTransformResultsToJestFormat (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="GET /user/{id}/item - Returns specific user item by its item id 401 - Bearer token is missing or invalid Error message validation" name="GET /user/{id}/item - Returns specific user item by its item id 401 - Bearer token is missing or invalid Error message validation" time="0.001">
+      <failure>assert.notStrictEqual(received, expected)
+
+Expected value not be strictly equal to:
+  &quot;User is not authorized&quot;
+Received:
+  undefined
+
+Message:
+  expected undefined to equal &apos;User is not authorized&apos;
+
+Difference:
+
+  Comparing two different types of values. Expected string but received undefined.
+    at Object.&lt;anonymous&gt; (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/test/GET.user.id.item.test.js:97:47)
+    at Promise.then.completed (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/utils.js:300:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/utils.js:233:10)
+    at _callCircusTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:315:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:251:3)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:125:9)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:120:9)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:120:9)
+    at run (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:70:3)
+    at runAndTransformResultsToJestFormat (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="GET /user/{id}/item - Returns specific user item by its item id 403 - Access forbidden Status code is 403" name="GET /user/{id}/item - Returns specific user item by its item id 403 - Access forbidden Status code is 403" time="0">
+      <failure>assert.strictEqual(received, expected)
+
+Expected value to strictly be equal to:
+  403
+Received:
+  200
+
+Message:
+  expected 200 to equal 403
+    at Object.&lt;anonymous&gt; (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/test/GET.user.id.item.test.js:114:40)
+    at Promise.then.completed (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/utils.js:300:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/utils.js:233:10)
+    at _callCircusTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:315:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:251:3)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:125:9)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:120:9)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:120:9)
+    at run (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:70:3)
+    at runAndTransformResultsToJestFormat (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="GET /user/{id}/item - Returns specific user item by its item id 403 - Access forbidden Error message validation" name="GET /user/{id}/item - Returns specific user item by its item id 403 - Access forbidden Error message validation" time="0.001">
+      <failure>assert.strictEqual(received, expected)
+
+Expected value to strictly be equal to:
+  &quot;Access forbidden.&quot;
+Received:
+  undefined
+
+Message:
+  expected undefined to equal &apos;Access forbidden.&apos;
+
+Difference:
+
+  Comparing two different types of values. Expected string but received undefined.
+    at Object.&lt;anonymous&gt; (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/test/GET.user.id.item.test.js:118:47)
+    at Promise.then.completed (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/utils.js:300:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/utils.js:233:10)
+    at _callCircusTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:315:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:251:3)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:125:9)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:120:9)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:120:9)
+    at run (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:70:3)
+    at runAndTransformResultsToJestFormat (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="GET /user/items - Returns all user items" errors="0" failures="3" skipped="0" timestamp="2023-08-19T19:32:54" time="5.553" tests="13">
+    <testcase classname="GET /user/items - Returns all user items 200 - Items successfully returned with limit of 0 Status code is 200" name="GET /user/items - Returns all user items 200 - Items successfully returned with limit of 0 Status code is 200" time="0.005">
+    </testcase>
+    <testcase classname="GET /user/items - Returns all user items 200 - Items successfully returned with limit of 0 JSON schema is valid" name="GET /user/items - Returns all user items 200 - Items successfully returned with limit of 0 JSON schema is valid" time="0.003">
+    </testcase>
+    <testcase classname="GET /user/items - Returns all user items 200 - Items successfully returned with limit of 1 Status code is 200" name="GET /user/items - Returns all user items 200 - Items successfully returned with limit of 1 Status code is 200" time="0.002">
+    </testcase>
+    <testcase classname="GET /user/items - Returns all user items 200 - Items successfully returned with limit of 1 JSON schema is valid" name="GET /user/items - Returns all user items 200 - Items successfully returned with limit of 1 JSON schema is valid" time="0.001">
+    </testcase>
+    <testcase classname="GET /user/items - Returns all user items 200 - Items successfully returned with limit of 10 Status code is 200" name="GET /user/items - Returns all user items 200 - Items successfully returned with limit of 10 Status code is 200" time="0.001">
+    </testcase>
+    <testcase classname="GET /user/items - Returns all user items 200 - Items successfully returned with limit of 10 JSON schema is valid" name="GET /user/items - Returns all user items 200 - Items successfully returned with limit of 10 JSON schema is valid" time="0.001">
+    </testcase>
+    <testcase classname="GET /user/items - Returns all user items 200 - Items successfully returned with limit of 499 Status code is 200" name="GET /user/items - Returns all user items 200 - Items successfully returned with limit of 499 Status code is 200" time="0.001">
+    </testcase>
+    <testcase classname="GET /user/items - Returns all user items 200 - Items successfully returned with limit of 499 JSON schema is valid" name="GET /user/items - Returns all user items 200 - Items successfully returned with limit of 499 JSON schema is valid" time="0.001">
+    </testcase>
+    <testcase classname="GET /user/items - Returns all user items 200 - Items successfully returned with limit of 500 Status code is 200" name="GET /user/items - Returns all user items 200 - Items successfully returned with limit of 500 Status code is 200" time="0">
+    </testcase>
+    <testcase classname="GET /user/items - Returns all user items 200 - Items successfully returned with limit of 500 JSON schema is valid" name="GET /user/items - Returns all user items 200 - Items successfully returned with limit of 500 JSON schema is valid" time="0.001">
+    </testcase>
+    <testcase classname="GET /user/items - Returns all user items 401 - Bearer token is missing or invalid Status code is 401" name="GET /user/items - Returns all user items 401 - Bearer token is missing or invalid Status code is 401" time="0.003">
+      <failure>assert.strictEqual(received, expected)
+
+Expected value to strictly be equal to:
+  401
+Received:
+  200
+
+Message:
+  expected 200 to equal 401
+    at Object.&lt;anonymous&gt; (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/test/GET.user.items.test.js:72:40)
+    at Promise.then.completed (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/utils.js:300:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/utils.js:233:10)
+    at _callCircusTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:315:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:251:3)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:125:9)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:120:9)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:120:9)
+    at run (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:70:3)
+    at runAndTransformResultsToJestFormat (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="GET /user/items - Returns all user items 401 - Bearer token is missing or invalid Error message validation" name="GET /user/items - Returns all user items 401 - Bearer token is missing or invalid Error message validation" time="0.001">
+      <failure>assert.notStrictEqual(received, expected)
+
+Expected value not be strictly equal to:
+  &quot;User is not authorized&quot;
+Received:
+  undefined
+
+Message:
+  expected undefined to equal &apos;User is not authorized&apos;
+
+Difference:
+
+  Comparing two different types of values. Expected string but received undefined.
+    at Object.&lt;anonymous&gt; (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/test/GET.user.items.test.js:76:47)
+    at Promise.then.completed (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/utils.js:300:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/utils.js:233:10)
+    at _callCircusTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:315:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:251:3)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:125:9)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:120:9)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:120:9)
+    at run (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:70:3)
+    at runAndTransformResultsToJestFormat (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="GET /user/items - Returns all user items 400 - Invalid request - limit parameter exceedes maximum allowed Status code is 400" name="GET /user/items - Returns all user items 400 - Invalid request - limit parameter exceedes maximum allowed Status code is 400" time="0">
+      <failure>assert.strictEqual(received, expected)
+
+Expected value to strictly be equal to:
+  400
+Received:
+  200
+
+Message:
+  expected 200 to equal 400
+    at Object.&lt;anonymous&gt; (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/test/GET.user.items.test.js:96:40)
+    at Promise.then.completed (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/utils.js:300:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/utils.js:233:10)
+    at _callCircusTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:315:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:251:3)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:125:9)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:120:9)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:120:9)
+    at run (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:70:3)
+    at runAndTransformResultsToJestFormat (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="POST /v1/user/login - Generates session token (JWT)" errors="0" failures="2" skipped="0" timestamp="2023-08-19T19:32:54" time="7.638" tests="5">
+    <testcase classname="POST /v1/user/login - Generates session token (JWT) 200 - Succesful login Status code is 200" name="POST /v1/user/login - Generates session token (JWT) 200 - Succesful login Status code is 200" time="0.005">
+    </testcase>
+    <testcase classname="POST /v1/user/login - Generates session token (JWT) 200 - Succesful login JSON schema is valid" name="POST /v1/user/login - Generates session token (JWT) 200 - Succesful login JSON schema is valid" time="0.002">
+    </testcase>
+    <testcase classname="POST /v1/user/login - Generates session token (JWT) 200 - Succesful login JWT payload - user_uuid assertion" name="POST /v1/user/login - Generates session token (JWT) 200 - Succesful login JWT payload - user_uuid assertion" time="0.002">
+    </testcase>
+    <testcase classname="POST /v1/user/login - Generates session token (JWT) 400 - Invalid login request (username and password are empty) status code is 400" name="POST /v1/user/login - Generates session token (JWT) 400 - Invalid login request (username and password are empty) status code is 400" time="0.002">
+      <failure>assert.strictEqual(received, expected)
+
+Expected value to strictly be equal to:
+  400
+Received:
+  200
+
+Message:
+  expected 200 to equal 400
+    at Object.&lt;anonymous&gt; (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/test/POST.v1.user.login.test.js:63:40)
+    at Promise.then.completed (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/utils.js:300:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/utils.js:233:10)
+    at _callCircusTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:315:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:251:3)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:125:9)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:120:9)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:120:9)
+    at run (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:70:3)
+    at runAndTransformResultsToJestFormat (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="POST /v1/user/login - Generates session token (JWT) 429 - Exceeding allowed number of login attempts (x-rate-limit) Login is forbidden after x-rate-limit is exceeded" name="POST /v1/user/login - Generates session token (JWT) 429 - Exceeding allowed number of login attempts (x-rate-limit) Login is forbidden after x-rate-limit is exceeded" time="4.297">
+      <failure>assert.strictEqual(received, expected)
+
+Expected value to strictly be equal to:
+  429
+Received:
+  200
+
+Message:
+  expected 200 to equal 429
+    at Object.&lt;anonymous&gt; (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/test/POST.v1.user.login.test.js:111:48)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="POST /user/item - Creates specific item" errors="0" failures="5" skipped="0" timestamp="2023-08-19T19:32:54" time="14.357" tests="7">
+    <testcase classname="POST /user/item - Creates specific item 201 - Item successfully created Status code is 201" name="POST /user/item - Creates specific item 201 - Item successfully created Status code is 201" time="0.007">
+    </testcase>
+    <testcase classname="POST /user/item - Creates specific item 201 - Item successfully created JSON schema is valid" name="POST /user/item - Creates specific item 201 - Item successfully created JSON schema is valid" time="0.005">
+    </testcase>
+    <testcase classname="POST /user/item - Creates specific item 201 - Item successfully created GET /user/items endpoint returns a new item" name="POST /user/item - Creates specific item 201 - Item successfully created GET /user/items endpoint returns a new item" time="10.53">
+      <failure>AxiosError: Request failed with status code 429
+    at settle (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/axios/lib/adapters/http.js:570:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)</failure>
+    </testcase>
+    <testcase classname="POST /user/item - Creates specific item 401 - Bearer token is missing or invalid Status code is 401" name="POST /user/item - Creates specific item 401 - Bearer token is missing or invalid Status code is 401" time="0.003">
+      <failure>assert.strictEqual(received, expected)
+
+Expected value to strictly be equal to:
+  401
+Received:
+  201
+
+Message:
+  expected 201 to equal 401
+    at Object.&lt;anonymous&gt; (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/test/POST.user.item.test.js:101:40)
+    at Promise.then.completed (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/utils.js:300:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/utils.js:233:10)
+    at _callCircusTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:315:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:251:3)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:125:9)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:120:9)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:120:9)
+    at run (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:70:3)
+    at runAndTransformResultsToJestFormat (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="POST /user/item - Creates specific item 401 - Bearer token is missing or invalid Error message validation" name="POST /user/item - Creates specific item 401 - Bearer token is missing or invalid Error message validation" time="0">
+      <failure>assert.notStrictEqual(received, expected)
+
+Expected value not be strictly equal to:
+  &quot;User is not authorized&quot;
+Received:
+  undefined
+
+Message:
+  expected undefined to equal &apos;User is not authorized&apos;
+
+Difference:
+
+  Comparing two different types of values. Expected string but received undefined.
+    at Object.&lt;anonymous&gt; (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/test/POST.user.item.test.js:105:47)
+    at Promise.then.completed (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/utils.js:300:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/utils.js:233:10)
+    at _callCircusTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:315:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:251:3)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:125:9)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:120:9)
+    at _runTestsForDescribeBlock (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:120:9)
+    at run (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/run.js:70:3)
+    at runAndTransformResultsToJestFormat (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="POST /user/item - Creates specific item 403 - Access forbidden Status code is 403" name="POST /user/item - Creates specific item 403 - Access forbidden Status code is 403" time="0">
+      <failure>AxiosError: Request failed with status code 429
+    at settle (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/axios/lib/adapters/http.js:570:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)</failure>
+    </testcase>
+    <testcase classname="POST /user/item - Creates specific item 403 - Access forbidden Error message validation" name="POST /user/item - Creates specific item 403 - Access forbidden Error message validation" time="0">
+      <failure>AxiosError: Request failed with status code 429
+    at settle (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (/Users/vladpiatkevich/Documents/Coding/nordpass-2nd-challenge-api/node_modules/axios/lib/adapters/http.js:570:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

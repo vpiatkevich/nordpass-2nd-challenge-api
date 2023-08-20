@@ -1,0 +1,23 @@
+{
+  "baseUrl": "https://virtserver.swaggerhub.com/nord-s/User-API/1.0.0",
+  "forbiddenAccessToken": "forbiddenAccessToken",
+  "itemTitle": "Homework API task v1",
+  "itemTags": [
+    "task",
+    "homework",
+    "api"
+  ],
+  "newItemId": "1f1a1eba-16b5-4cfa-a810-cd9486f9bf7f",
+  "newItemTitle": "New item",
+  "newItemTag": "newItemTag",
+  "newFileId": "tt612ttt28d229d334d4391ttt",
+  "newFileName": "newItem.doc",
+  "newFileSize": 123,
+  "newFileContentPath": "vault/test/files/newitem/file",
+  "newFieldId": "2f2a2eba-36b5-4cfa-a810-cd9486f9bf7f",
+  "newFieldLabel": "My new field",
+  "newFieldType": "note",
+  "newFieldValue": "this is a test note",
+  "userNotAuthorizedMessage": "User is not authorized",
+  "accessForbiddenMessage": "Access forbidden."
+}
